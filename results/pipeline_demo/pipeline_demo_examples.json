@@ -1,7 +1,7 @@
 [
   {
     "example": "1_correct_attack",
-    "row_in_deduped_sample": "110112",
+    "row_id": "110112",
     "true_label": "Mirai-greip_flood",
     "predicted_label": "Mirai-greip_flood",
     "confidence": 0.99,
@@ -11,7 +11,7 @@
   },
   {
     "example": "2_benign",
-    "row_in_deduped_sample": "206245",
+    "row_id": "206245",
     "true_label": "BenignTraffic",
     "predicted_label": "BenignTraffic",
     "confidence": 0.97,
@@ -21,7 +21,7 @@
   },
   {
     "example": "3_wrong_prediction",
-    "row_in_deduped_sample": "36761",
+    "row_id": "36761",
     "true_label": "DNS_Spoofing",
     "predicted_label": "BenignTraffic",
     "confidence": 0.74,

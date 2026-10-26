@@ -85,7 +85,7 @@
     "verbose": 0,
     "warm_start": false
   },
-  "train_seconds": 6.27,
+  "train_seconds": 6.96,
   "multiclass": {
     "accuracy": 0.9136645876837549,
     "macro_precision": 0.851740645424104,

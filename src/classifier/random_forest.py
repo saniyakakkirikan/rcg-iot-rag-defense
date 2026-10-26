@@ -118,7 +118,13 @@ def main():
     pd.DataFrame(report).T.to_csv(RESULTS / f"rf_multiclass_{args.tag}_per_class.csv")
     pd.DataFrame(cm, index=labels, columns=labels).to_csv(
         RESULTS / f"rf_multiclass_{args.tag}_confusion.csv")
-
+    proba = model.predict_proba(X_test)
+    pd.DataFrame({
+        "row_in_sample": y_test.index,
+        "true_label": y_test.to_numpy(),
+        "predicted_label": pred,
+        "confidence": np.round(proba.max(axis=1), 2),
+    }).to_csv(RESULTS / f"rf_multiclass_{args.tag}_test_predictions.csv", index=False)
     importances = pd.Series(model.feature_importances_, index=features).sort_values(ascending=False)
     importances.to_csv(RESULTS / f"rf_multiclass_{args.tag}_feature_importance.csv",
                        header=["importance"])

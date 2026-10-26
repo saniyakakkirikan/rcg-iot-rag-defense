@@ -29,7 +29,7 @@ def build_prompt(predicted_class, description, confidence):
         f"(model confidence: {confidence:.1%}).\n\n"
         f"Description of this class from our knowledge base:\n{description}\n\n"
         "Write a short threat report for the analyst in 3 to 4 sentences. "
-        "Use only the description above. Do not add facts that are not in it."
+        "Use only the description above. Do not add facts,advice or recommendations that are not in it."
     )
 
 

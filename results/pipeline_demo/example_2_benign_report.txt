@@ -1,3 +1,1 @@
-Threat Report: BenignTraffic
-
-The network flow was classified as BenignTraffic with 97.0% model confidence. This classification indicates normal, legitimate activity, such as web browsing, DNS lookups, media streaming, or routine IoT device check-ins. Typical characteristics include complete TCP handshakes, balanced request and response patterns, and moderate packet rates. The traffic does not exhibit floods, scans, or malicious payloads according to the class description.
+The classifier identified the network flow as BenignTraffic with 97.0% confidence. This classification represents normal, legitimate activity such as web browsing, DNS lookups, media streaming, and routine IoT device check-ins. The traffic typically exhibits complete TCP handshakes, balanced request and response patterns, and moderate packet rates, without floods, scans, or malicious payloads.
